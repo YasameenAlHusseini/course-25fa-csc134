@@ -1,2 +1,2 @@
 # course-25fa-csc134
-M1T1 - Hello User
+CSC 134, C++ Programming
