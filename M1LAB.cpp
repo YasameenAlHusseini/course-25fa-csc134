@@ -10,9 +10,9 @@ int main() {
     // The owner’s name
     string name = "Yasameen Al-Husseini"
     // number of apples owned
-    int apples = 255
+    int apples = 255;
     // price per apple
-    double pricePerApple = 0.25
+    double pricePerApple = 0.25;
     // calculate the total price of the apples
     // print all the information about the orchard
     cout << "Welcome to " << name;
