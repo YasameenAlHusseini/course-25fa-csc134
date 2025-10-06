@@ -1,6 +1,6 @@
 /*
 CSC 134
-M2HW1 - Bronze
+M2LAB
 Yasameen Al-Husseini
 10/4/25
 */
