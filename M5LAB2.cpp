@@ -1,3 +1,7 @@
+// CSC 134
+// M5T2 - Complete a Program
+// Yasameen Al-Husseini
+// 11/11/25
 
 #include <iostream>
 #include <limits> // Required for numeric_limits
