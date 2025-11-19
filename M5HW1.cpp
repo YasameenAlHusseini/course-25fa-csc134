@@ -21,12 +21,24 @@ int main(){
     // Input month names and the amount of rainfall for each month
 
     for (int i = 0; i < numMonths; i++) {
-        cout << "Enter month:";
+        cout << "Enter month: ";
         cin >> monthNames[i];
-        cout << "Enter rainfall for " << monthNames[i] << ":";
+        cout << "Enter rainfall for " << monthNames[i] << ": ";
         cin >> rainfallAmounts[i];
         totalRainfall += rainfallAmounts [i];
     }
+
+    // Calculate and display the average rainfall
+    double averageRainfall = totalRainfall / numMonths;
+    cout << fixed << setprecision(2);
+    cout << "The average rainfall for ";
+    for (int i = 0; i < numMonths; i++) {
+        cout << monthNames[i];
+        if (i < numMonths - 1) {
+            cout << ", ";
+        }
+    }
+    cout << " is " << averageRainfall << " inches." << endl;
 }
 
 
