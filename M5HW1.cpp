@@ -23,7 +23,7 @@ int main(){
     for (int i = 0; i < numMonths; i++) {
         cout << "Enter month:";
         cin >> monthNames[i];
-        cout << "Enter rainfall for" << monthNames[i] << ":";
+        cout << "Enter rainfall for " << monthNames[i] << ":";
         cin >> rainfallAmounts[i];
         totalRainfall += rainfallAmounts [i];
     }
