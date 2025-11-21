@@ -15,6 +15,7 @@ bool tea = false;
 bool poop = false;
 
 // Function declarations
+void mainMenu();
 void startStory();
 void goToBalcony();
 void drinkTea();
@@ -72,6 +73,25 @@ int getChoice(int maxChoices) {
         } catch (...) {
             cout << "Invalid input. Please enter a number." << endl;
         }
+    }
+}
+
+void mainMenu() {
+    cout << "\n======================================" << endl;
+    cout << "         MAIN MENU" << endl;
+    cout << "======================================\n" << endl;
+    cout << "1. Start Game" << endl;
+    cout << "2. Exit" << endl;
+    
+    int choice = getChoice(2);
+    
+    if (choice == 1) {
+        startStory();
+    } else {
+        cout << "\n======================================" << endl;
+        cout << "      Alright, until next time!" << endl;
+        cout << "======================================" << endl;
+        exit(0);
     }
 }
 
@@ -825,11 +845,7 @@ int main() {
     cout << "   CHOOSE YOUR OWN ADVENTURE GAME" << endl;
     cout << "======================================" << endl;
     
-    startStory();
-    
-    cout << "\n======================================" << endl;
-    cout << "      Alright, until next time!" << endl;
-    cout << "======================================" << endl;
+    mainMenu();
     
     return 0;
 }
